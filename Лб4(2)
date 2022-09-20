@@ -1,0 +1,8 @@
+import math
+def func(x0,x1):
+    F = math.pow(math.pow(x0,3)+math.pow(x1,3),1/4)+math.sin(3*x0+1)+math.log(math.fabs(x0),math.e)-math.pow(math.e,x1-x0)
+    return (F)
+x=float(input('Ведіть X: '))
+y=float(input('Ведіть Y: '))
+F=func(x,y)
+print(F)
