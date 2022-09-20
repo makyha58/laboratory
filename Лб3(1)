@@ -1,0 +1,9 @@
+import sys
+sys.stdout.write('23456 ')
+bar = sys.stdin.readline()
+foo = int((int(bar[1]) * int(bar[5])))
+sys.stdout.write('добуток = ')
+sys.stdout.write(str(foo))
+foo = int((int(bar[2]) + int(bar[3])))
+sys.stdout.write('сума = ')
+sys.stdout.write(str(foo))

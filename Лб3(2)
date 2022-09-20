@@ -1,0 +1,21 @@
+import math
+
+def middleline (a, b, c):
+    n = (a + c) / 2
+
+
+    return n
+
+
+# Driver Code
+a = 4
+
+b = 3
+
+c = 5
+
+# Function Call
+ans = middleline(a, b, c)
+
+# Print the final answer
+print(round(ans, 2))
