@@ -1,0 +1,8 @@
+import math
+bar = float(input('Введіть x  '))
+if bar >= 3.86:
+    print((2.25*bar + bar2 + math.log10(math.fabs(bar)))0.5)
+elif bar > 1.54:
+    print(math.ebar + (12*bar2 - 1)/(bar+9))
+else:
+    print(math.log(math.fabs(bar), math.e) - bar**bar)

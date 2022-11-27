@@ -1,0 +1,18 @@
+bar1 = float(input('A x  '))
+bar2 = float(input('A y  '))
+bar3 = float(input('B x  '))
+bar4 = float(input('B y  '))
+bar5 = float(input('C x  '))
+bar6 = float(input('C y  '))
+foo3 = bar1 + bar2
+foo4 = bar3 + bar4
+foo5 = bar5 + bar6
+if foo3 < foo4 and foo3 < foo5:
+    print('A')
+    print(((bar1 - 0)2 + (bar2 - 0)2)**0.5)
+elif foo4 < foo3 and foo4 < foo5:
+    print('B')
+    print(((bar3 - 0)2 + (bar4 - 0)2)**0.5)
+elif foo5 < foo3 and foo5 < foo4:
+     print('C')
+    print(((bar5 - 0)2 + (bar6 - 0)2)**0.5)

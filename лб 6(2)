@@ -1,0 +1,12 @@
+import math as m
+a = float(input('Введіть нижню границю: '))
+b = float(input('Введіть верхню границю: '))
+h = float(input('Введіть значення кроку: '))
+
+sp = []
+while a <= b:
+    sp.append(m.ea + m.fabs(a)0.5)
+    a += h
+print(sp)
+sp.sort()
+print(sp[0:4])
