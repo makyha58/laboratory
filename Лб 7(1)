@@ -1,0 +1,18 @@
+bar = input('add  ')
+bar1 = bar + ' '
+while len(bar) != 0:
+    bar = input('add  ')
+    bar1 = bar1 + bar + ' '
+foo = bar1.split(' ')
+
+def start():
+    for i in foo:
+        foo1 = foo.count(i)
+        if foo1 > 1:
+            foo2 = foo.index(i)
+            foo.pop(foo2)
+            start()
+
+start()
+foo.pop(-1)
+print(foo)

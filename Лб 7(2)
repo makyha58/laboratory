@@ -1,0 +1,13 @@
+import numpy as np
+M = int(input('add M  '))
+N = int(input('add N  '))
+A = np.array(np.random.randint(0, 2, M*N)).reshape(M, N)
+B = np.array(np.random.randint(0, 1, M))
+for i in range(M):
+    if np.sum(A, axis=1)[i] / 2 != int(np.sum(A, axis=1)[i] / 2):
+        B[i] = 1
+    else:
+        B[i] = 0
+B = B.reshape(M, 1)
+matrix = np.concatenate((A, B), axis=1)
+print(matrix)

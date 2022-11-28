@@ -1,0 +1,15 @@
+import string
+abc = tuple('АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщьЮюЯя')
+bar = input('add  ')
+x = set(bar)
+let = set()
+num = set()
+punctuation = set()
+for i in x:
+        if i in string.digits:
+            num.add(i)
+        elif i in string.ascii_letters or i in abc:
+            let.add(i)
+        else:
+            punctuation.add(i)
+print('цифри', num, 'букви', let, 'розділові знаки', punctuation)
