@@ -1,0 +1,22 @@
+Import tkinter as tk
+import json
+
+def do _settings():
+
+with open("settings.json", "p", encoding-"utf-8") as f:
+settings = json. load(f)
+
+win.minsize(settings["w"], settings["h"))
+win.configure(bg-settings["col"))
+L.config(text=settings["tit"], bg-settings ["col"])
+b.place(x=0, y=467, relwidth=1)
+
+win = tk.Tk()
+win.geometry("280×180")
+win.configure(bg='olive")
+
+L = tk.Label (win, text-"Заголовок вікна", be "olive", foreground="White")
+b = tk.Button(text-"Эмінити налаштування вікна", bg-"black", foreground-"white", command-do_settings)
+b.place(x=0, y=147, relwidth=1)
+
+win.mainloop()

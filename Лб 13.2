@@ -1,0 +1,16 @@
+class Table:
+    # конструктор классу
+    def __init__(self, number, color, year, price):
+        # його атрибути
+        self.number = int(number)
+        self.color = str(color)
+        self.square = int(year)
+        self.price = float(price)
+
+    # метод зміни серійного номеру
+    def refactor_number(self, number):
+        self.number = number
+
+    # метод зміни ціни
+    def refactor_price(self, price):
+        self.price = price

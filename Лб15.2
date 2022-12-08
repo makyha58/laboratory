@@ -1,0 +1,19 @@
+import tkinter as tk
+
+def do calc():
+nums = Entr.get().split()
+for i in range(len (nums)):
+nums[i] = float(nums [i])
+L. config(text-f"максимальне число - {max (nums) } , \nМінімальне число - {min(nums)}")
+
+win = tk.Tk()
+win.geometry ("300×300")
+win.configure(bg='black')
+L = tk.Label(win, text="Введіть дійсні числа через пробіл", bg="black", foreground="White")
+Entr = tk. Entry(win, border=5, width=33)
+b = tk.Button(text="Знайти найбільше та найменше число", bg-"black", border=7, foreground="white", command=do_calc)
+L.pack(side-"top")
+Entr.pack(pady=80)
+b.pack(side="bottom")
+
+win.mainloop()

@@ -1,0 +1,22 @@
+from table import *
+
+if name == "__main__":
+    # створюємо екземпляри класу
+    pine = Table(111, "Black", 2021, 35.5)
+    maple = Table(112, "Grey", 2022, 60.0)
+    hornbeam = Table(113, "Green", 2019, 44.1)
+    oak = Table(114, "Brown", 1837, 9000.22)
+
+    # cписок об'єктів
+    furniture = [pine, maple, hornbeam, oak]
+
+    # перевіряємо роботу методів
+    print("Ціна кленового столу до зміни: ", maple.price)
+    print("Інвентарний номер дубового столу до зміни: ", oak.number, "\n")
+
+    # викликаємо методи
+    furniture[1].refactor_price(100)
+    furniture[-1].refactor_number(777)
+
+    print("Ціна кленового столу після зміни: ", maple.price)
+    print("Інвентарний номер дубового столу після зміни: ", oak.number)
